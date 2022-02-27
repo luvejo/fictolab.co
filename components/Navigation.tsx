@@ -1,4 +1,6 @@
 import NavigationLink from "components/NavigationLink";
+import IconMoon from "public/icons/moon.svg";
+import IconSun from "public/icons/sun.svg";
 
 type Props = {
   onChangeTheme: () => void;
@@ -9,8 +11,6 @@ const Navigation: React.FC<Props> = ({
   onChangeTheme,
   lightThemeOn,
 }: Props) => {
-  const themeIcon = lightThemeOn ? "sun.svg" : "moon.svg";
-
   return (
     <nav className=" bg-gray-300 text-white">
       <div className="mx-auto flex max-w-content items-center justify-between">
@@ -20,7 +20,7 @@ const Navigation: React.FC<Props> = ({
         </div>
 
         <button onClick={onChangeTheme}>
-          <img src={`/icons/${themeIcon}`} alt=" Dark theme moon" />
+          {lightThemeOn ? <IconSun /> : <IconMoon />}
         </button>
       </div>
     </nav>

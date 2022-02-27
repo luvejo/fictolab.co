@@ -12,7 +12,7 @@ const NavigationLink: React.FC<Props> = ({ children, href }: Props) => {
   const isActive = router.asPath === href;
 
   return (
-    <Link href={href}>
+    <Link href={href} passHref>
       <div className="relative cursor-pointer py-4 px-2 hover:border-gray-400 ">
         {children}
 

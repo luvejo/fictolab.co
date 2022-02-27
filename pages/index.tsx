@@ -19,7 +19,7 @@ const Index: NextPage = () => {
 
         <section>
           <h1 className="text-6xl font-semibold text-th-text-primary">
-            Hi, I'm Luis
+            Hi, I&apos;m Luis
           </h1>
 
           <p className="text-3xl font-semibold text-th-text-secondary">
@@ -32,18 +32,23 @@ const Index: NextPage = () => {
           </p>
 
           <div className="mt-12 flex gap-5">
-            <a href="https://github.com/luvejo" target="_blank">
+            <a
+              href="https://github.com/luvejo"
+              target="_blank"
+              rel="noreferrer"
+            >
               <IconGitHub className="fill-th-text-primary" />
             </a>
 
             <a
               href="https://www.linkedin.com/in/luisfelipevelasquez"
               target="_blank"
+              rel="noreferrer"
             >
               <IconLinkedIn className="fill-th-text-primary" />
             </a>
 
-            <a href="https://dev.to/luvejo" target="_blank">
+            <a href="https://dev.to/luvejo" target="_blank" rel="noreferrer">
               <IconDevTo className="fill-th-text-primary" />
             </a>
           </div>
