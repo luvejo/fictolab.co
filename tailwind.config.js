@@ -21,7 +21,8 @@ module.exports = {
 
       "th-bg": "var(--bg)",
       "th-card": "var(--card)",
-      "th-text": "var(--text)",
+      "th-text-primary": "var(--text-primary)",
+      "th-text-secondary": "var(--text-secondary)",
     },
 
     maxWidth: {

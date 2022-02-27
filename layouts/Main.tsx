@@ -23,7 +23,7 @@ const MainLayout: React.FC = ({ children }) => {
           crossOrigin=""
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -31,6 +31,12 @@ const MainLayout: React.FC = ({ children }) => {
       <Navigation onChangeTheme={toggleTheme} lightThemeOn={lightThemeOn} />
 
       {children}
+
+      <footer className="bg-gray-500 p-4">
+        <p className="text-center text-xl text-gray-200">
+          Thanks for passing by.
+        </p>
+      </footer>
     </div>
   );
 };

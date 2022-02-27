@@ -20,11 +20,13 @@ body {
 :root {
   --bg: theme("colors.gray.400");
   --card: theme("colors.gray.300");
-  --text: theme("colors.white");
+  --text-primary: theme("colors.white");
+  --text-secondary: theme("colors.gray.200");
 }
 
 .light-theme {
   --bg: theme("colors.gray.50");
   --card: theme("colors.gray.100");
-  --text: theme("colors.gray.500");
+  --text-primary: theme("colors.gray.500");
+  --text-secondary: theme("colors.gray.200");
 }
