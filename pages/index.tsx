@@ -7,7 +7,7 @@ import IconLinkedIn from "public/icons/linkedin.svg";
 
 const Index: NextPage = () => {
   return (
-    <div className="mx-auto my-8 flex flex-grow items-center ">
+    <div className="mx-auto my-14 flex flex-grow items-center ">
       <div className="flex w-[740px]  gap-12">
         <FramedImage
           fileName="avatar.jpg"
