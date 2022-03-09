@@ -48,7 +48,9 @@ const Projects: NextPage<Props> = ({ projects }: Props) => {
 };
 
 export async function getStaticProps() {
-  const projects = await getProjects();
+  const projects = await fetch(
+    "https://firebasestorage.googleapis.com/v0/b/fictolab.appspot.com/o/projects.json?alt=media"
+  ).then((res) => res.json());
 
   return {
     props: {
