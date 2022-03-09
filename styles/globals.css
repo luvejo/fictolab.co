@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro";
-  min-width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 100%;
 }
 
 /*-------------------------------------
