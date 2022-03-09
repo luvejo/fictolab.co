@@ -2,7 +2,6 @@ import ProjectEntry, { Project } from "components/ProjectEntry";
 import ArchivedProject from "components/ArchivedProject";
 
 import type { NextPage } from "next";
-import { getProjects } from "utils/projects";
 
 type Props = {
   projects: Project[];
