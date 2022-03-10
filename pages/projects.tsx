@@ -18,6 +18,7 @@ const Projects: NextPage<Props> = ({ projects }: Props) => {
 
         {featuredProjects.map((project) => (
           <ProjectEntry
+            key={project.title}
             title={project.title}
             description={project.description}
             stack={project.stack}
@@ -34,6 +35,7 @@ const Projects: NextPage<Props> = ({ projects }: Props) => {
 
         {archivedProjects.map((project) => (
           <ArchivedProject
+            key={project.title}
             title={project.title}
             description={project.description}
             links={project.links}

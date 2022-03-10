@@ -23,7 +23,7 @@ const ProjectLinks: React.FC<Props> = ({ links }: Props) => {
     const Icon = iconTypes[type];
 
     return (
-      <a href={link} className="flex items-center">
+      <a key={type} href={link} className="flex items-center">
         <Icon className="text-th-text-secondary" />
       </a>
     );

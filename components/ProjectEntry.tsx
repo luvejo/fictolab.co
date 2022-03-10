@@ -49,7 +49,10 @@ const ProjectEntry: React.FC<Project> = ({
 
         <div className="mt-3 flex flex-wrap gap-3">
           {stack.map((tech) => (
-            <div className="rounded-md bg-th-card py-2 px-4 text-2xl">
+            <div
+              key={tech}
+              className="rounded-md bg-th-card py-2 px-4 text-2xl"
+            >
               {tech}
             </div>
           ))}
