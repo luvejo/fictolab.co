@@ -33,8 +33,8 @@ const MainLayout: React.FC = ({ children }) => {
       {children}
 
       <footer className="bg-gray-500 p-4">
-        <p className="text-center text-xl text-gray-200">
-          Thanks for passing by.
+        <p className="text-center text-xl text-white">
+          Thanks for passing by! 👋
         </p>
       </footer>
     </div>
