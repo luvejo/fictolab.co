@@ -1,8 +1,8 @@
-import { Links } from "components/ProjectEntry";
-
 import Figma from "public/icons/figma.svg";
 import Demo from "public/icons/demo.svg";
 import GitHub from "public/icons/github.svg";
+
+import { Links } from "types";
 
 interface IconTypes {
   [key: string]: any;
