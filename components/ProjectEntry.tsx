@@ -1,3 +1,5 @@
+import FramedImage from "components/FramedImage";
+import ProjectLinks from "components/ProjectLinks";
 import HeadingTwo from "components/HeadingTwo";
 import HeadingThree from "components/HeadingThree";
 import Paragraph from "components/Paragraph";
@@ -25,8 +27,22 @@ const ProjectEntry: React.FC<Project> = ({
   lastCommit,
 }: Project) => {
   return (
-    <article className="mb-28 flex justify-between gap-9 odd:flex-row-reverse">
-      <div>
+    <article className="mb-16 items-start justify-between gap-9 md:flex md:even:flex-row-reverse lg:mb-28 lg:flex lg:flex-row">
+      {/* Screenshot */}
+      <div className="flex grow justify-center">
+        <div className="lg:h-screenshot h-full w-full max-w-screenshot lg:w-screenshot">
+          <FramedImage
+            fileName={screenshot}
+            alt=" Screenshot of the project"
+            width={493}
+            height={369}
+            layout="responsive"
+          />
+        </div>
+      </div>
+
+      {/* Description */}
+      <div className="mx-auto mt-6 max-w-[496px] md:mt-0 md:w-2/5">
         <div className="flex items-center gap-4">
           <HeadingTwo>{title}</HeadingTwo>
 
@@ -46,22 +62,12 @@ const ProjectEntry: React.FC<Project> = ({
           {stack.map((tech) => (
             <div
               key={tech}
-              className="rounded-md bg-th-card py-2 px-4 text-2xl"
+              className="rounded-md bg-th-card py-2 px-4 text-lg font-semibold md:text-2xl"
             >
               {tech}
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="grow">
-        <FramedImage
-          fileName={screenshot}
-          alt=" Screenshot of the project"
-          width={493}
-          height={369}
-          layout="fixed"
-        />
       </div>
     </article>
   );

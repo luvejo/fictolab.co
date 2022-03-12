@@ -17,10 +17,10 @@ const NavigationLink: React.FC<Props> = ({ children, href }: Props) => {
         {children}
 
         <span
-          className={classNames([
+          className={classNames(
             "absolute left-0 bottom-0 w-full border-b-6 border-white opacity-0 transition-opacity duration-500",
-            { "opacity-100": isActive },
-          ])}
+            { "opacity-100": isActive }
+          )}
         />
       </div>
     </Link>

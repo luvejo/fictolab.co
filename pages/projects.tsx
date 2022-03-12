@@ -13,7 +13,7 @@ const Projects: NextPage<Props> = ({ projects }: Props) => {
   const archivedProjects = projects.filter((p) => p.archived);
 
   return (
-    <div className="mx-auto my-14 w-full max-w-content flex-grow text-th-text-primary ">
+    <div className="mx-auto my-14 w-full max-w-content flex-grow px-5 text-th-text-primary ">
       <section>
         <HeadingOne className="mb-16 text-center">Featured</HeadingOne>
 

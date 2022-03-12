@@ -12,7 +12,7 @@ const MainLayout: React.FC = ({ children }) => {
     <div
       className={classNames(
         { "light-theme": lightThemeOn },
-        "absolute top-0 left-0 flex min-h-full w-full flex-col bg-th-bg transition-colors duration-500"
+        "absolute top-0 left-0 flex min-h-[100.1%] w-full flex-col bg-th-bg transition-colors duration-500"
       )}
     >
       <Head>

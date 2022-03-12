@@ -13,8 +13,8 @@ const Navigation: React.FC<Props> = ({
 }: Props) => {
   return (
     <nav className=" bg-gray-300 text-white">
-      <div className="mx-auto flex max-w-content items-center justify-between">
-        <div className="flex gap-6 text-2xl font-bold">
+      <div className="mx-auto flex max-w-content items-center justify-between px-5">
+        <div className="flex gap-6 text-xl font-bold md:text-2xl">
           <NavigationLink href="/">About</NavigationLink>
           <NavigationLink href="/projects">Projects</NavigationLink>
         </div>

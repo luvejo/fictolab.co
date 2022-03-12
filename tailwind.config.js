@@ -25,11 +25,14 @@ module.exports = {
       "th-text-secondary": "var(--text-secondary)",
     },
 
-    maxWidth: {
-      content: "920px",
-    },
-
     extend: {
+      width: {
+        screenshot: "493px",
+      },
+      maxWidth: {
+        screenshot: "493px",
+        content: "920px",
+      },
       borderWidth: {
         6: "6px",
       },
