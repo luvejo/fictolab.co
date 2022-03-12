@@ -1,15 +1,5 @@
 import ProjectLinks from "components/ProjectLinks";
-
-export type Links = {
-  demo?: string;
-  github?: string;
-  figma?: string;
-};
-
-export type CommitDate = {
-  month: string;
-  year: number;
-};
+import { Links, CommitDate } from "types";
 
 export type Project = {
   title: string;
