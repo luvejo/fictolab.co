@@ -1,4 +1,5 @@
 import ProjectLinks from "components/ProjectLinks";
+import { getSimplifiedDateRange } from "utils/date";
 import { Links, CommitDate } from "types";
 
 export type Project = {
@@ -25,10 +26,7 @@ const ArchivedEntry: React.FC<Project> = ({
           <ProjectLinks links={links} />
         </div>
         <p className="text-2xl text-th-text-secondary">
-          {firstCommit.month}, {firstCommit.year} -
-          {lastCommit?.month
-            ? ` ${lastCommit.month}, ${lastCommit.year}`
-            : " Present"}
+          {getSimplifiedDateRange(firstCommit, lastCommit)}
         </p>
       </div>
 
