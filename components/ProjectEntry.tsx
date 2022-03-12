@@ -2,6 +2,7 @@ import HeadingTwo from "components/HeadingTwo";
 import HeadingThree from "components/HeadingThree";
 import Paragraph from "components/Paragraph";
 import { Links, CommitDate } from "types";
+import { getSimplifiedDateRange } from "utils/date";
 
 export type Project = {
   title: string;
@@ -20,6 +21,8 @@ const ProjectEntry: React.FC<Project> = ({
   screenshot,
   links,
   stack,
+  firstCommit,
+  lastCommit,
 }: Project) => {
   return (
     <article className="mb-28 flex justify-between gap-9 odd:flex-row-reverse">
@@ -29,7 +32,9 @@ const ProjectEntry: React.FC<Project> = ({
 
           <ProjectLinks links={links} />
         </div>
-        <p className="text-2xl text-th-text-secondary">Jan, 2022 - Present</p>
+        <p className="text-2xl text-th-text-secondary">
+          {getSimplifiedDateRange(firstCommit, lastCommit)}
+        </p>
 
         <Paragraph className="mt-2 lg:mt-9">
           <span dangerouslySetInnerHTML={{ __html: description }} />
