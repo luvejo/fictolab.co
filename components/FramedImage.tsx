@@ -1,5 +1,6 @@
 import Image, { ImageProps } from "next/image";
 import { getAssetUrl } from "utils/assets";
+import classNames from "classnames";
 
 type Props = Omit<ImageProps, "src"> & {
   fileName: string;
@@ -11,18 +12,12 @@ const FramedImage: React.FC<Props> = ({
   alt,
   fileName,
   layout,
+  className,
 }: Props) => {
-  const shadowStyles = {
-    width,
-    height,
-  };
-
   return (
-    <div className="relative">
-      <div
-        className="absolute top-3 left-3 rounded-xl bg-gray-500"
-        style={shadowStyles}
-      />
+    <div
+      className={classNames("framed-image h-full w-full rounded-xl", className)}
+    >
       <Image
         className="rounded-xl"
         src={getAssetUrl(fileName)}
