@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 
 import FramedImage from "components/FramedImage";
+import HeadingOne from "components/HeadingOne";
+import Paragraph from "components/Paragraph";
 import IconGitHub from "public/icons/github.svg";
 import IconDevTo from "public/icons/devto.svg";
 import IconLinkedIn from "public/icons/linkedin.svg";
@@ -17,19 +19,18 @@ const Index: NextPage = () => {
           layout="fixed"
         />
 
-        <section>
-          <h1 className="text-6xl font-semibold text-th-text-primary">
-            Hi, I&apos;m Luis
-          </h1>
+        {/* About */}
+        <section className="text-center md:text-left">
+          <HeadingOne>Hi, I&apos;m Luis</HeadingOne>
 
           <p className="text-3xl font-semibold text-th-text-secondary">
             Web Frontend
           </p>
 
-          <p className="mt-8 text-2xl text-th-text-primary">
+          <Paragraph className="mt-9">
             <strong>Fictolab</strong> is where I share the web prototypes that I
             would love to see in the world.
-          </p>
+          </Paragraph>
 
           <div className="mt-12 flex gap-5">
             <a

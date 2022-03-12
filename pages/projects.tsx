@@ -2,6 +2,7 @@ import ProjectEntry, { Project } from "components/ProjectEntry";
 import ArchivedProject from "components/ArchivedProject";
 
 import type { NextPage } from "next";
+import HeadingOne from "components/HeadingOne";
 
 type Props = {
   projects: Project[];
@@ -14,7 +15,7 @@ const Projects: NextPage<Props> = ({ projects }: Props) => {
   return (
     <div className="mx-auto my-14 w-full max-w-content flex-grow text-th-text-primary ">
       <section>
-        <h2 className="mb-20 text-center text-6xl font-semibold">Featured</h2>
+        <HeadingOne className="mb-16 text-center">Featured</HeadingOne>
 
         {featuredProjects.map((project) => (
           <ProjectEntry
@@ -31,7 +32,7 @@ const Projects: NextPage<Props> = ({ projects }: Props) => {
       </section>
 
       <section>
-        <h2 className="mb-20 text-center text-6xl font-semibold">Archive</h2>
+        <HeadingOne className="mb-16 text-center">Archive</HeadingOne>
 
         {archivedProjects.map((project) => (
           <ArchivedProject

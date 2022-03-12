@@ -1,5 +1,6 @@
-import FramedImage from "./FramedImage";
-import ProjectLinks from "./ProjectLinks";
+import HeadingTwo from "components/HeadingTwo";
+import HeadingThree from "components/HeadingThree";
+import Paragraph from "components/Paragraph";
 import { Links, CommitDate } from "types";
 
 export type Project = {
@@ -24,18 +25,17 @@ const ProjectEntry: React.FC<Project> = ({
     <article className="mb-28 flex justify-between gap-9 odd:flex-row-reverse">
       <div>
         <div className="flex items-center gap-4">
-          <h2 className="text-4xl font-semibold">{title}</h2>
+          <HeadingTwo>{title}</HeadingTwo>
 
           <ProjectLinks links={links} />
         </div>
         <p className="text-2xl text-th-text-secondary">Jan, 2022 - Present</p>
 
-        <p
-          className="mt-9  text-2xl"
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
+        <Paragraph className="mt-2 lg:mt-9">
+          <span dangerouslySetInnerHTML={{ __html: description }} />
+        </Paragraph>
 
-        <h3 className="mt-3 text-3xl font-semibold">Tech</h3>
+        <HeadingThree className="mt-3">Tech</HeadingThree>
 
         <div className="mt-3 flex flex-wrap gap-3">
           {stack.map((tech) => (
