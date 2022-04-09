@@ -26,18 +26,22 @@ const ProjectEntry: React.FC<Project> = ({
   firstCommit,
   lastCommit,
 }: Project) => {
+  const mainLink = links?.demo || links?.figma || links?.github;
+
   return (
     <article className="mb-16 items-start justify-between gap-9 md:flex md:even:flex-row-reverse lg:mb-28 lg:flex lg:flex-row">
       {/* Screenshot */}
       <div className="flex grow justify-center">
         <div className="lg:h-screenshot h-full w-full max-w-screenshot lg:w-screenshot">
-          <FramedImage
-            fileName={screenshot}
-            alt=" Screenshot of the project"
-            width={493}
-            height={369}
-            layout="responsive"
-          />
+          <a href={mainLink} target="_blank">
+            <FramedImage
+              fileName={screenshot}
+              alt=" Screenshot of the project"
+              width={493}
+              height={369}
+              layout="responsive"
+            />
+          </a>
         </div>
       </div>
 
