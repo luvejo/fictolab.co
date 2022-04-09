@@ -33,7 +33,7 @@ const ProjectEntry: React.FC<Project> = ({
       {/* Screenshot */}
       <div className="flex grow justify-center">
         <div className="lg:h-screenshot h-full w-full max-w-screenshot lg:w-screenshot">
-          <a href={mainLink} target="_blank">
+          <a href={mainLink} target="_blank" rel="noreferrer">
             <FramedImage
               fileName={screenshot}
               alt=" Screenshot of the project"
