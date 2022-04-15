@@ -1,5 +1,4 @@
 import Navigation from "components/Navigation";
-import Head from "next/head";
 import Script from "next/script";
 import { useState } from "react";
 import classNames from "classnames";
@@ -22,7 +21,8 @@ const MainLayout: React.FC = ({ children }) => {
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
-        {`
+        {process.env.NODE_ENV !== "development" &&
+          `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
