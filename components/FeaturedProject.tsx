@@ -17,7 +17,7 @@ export type Project = {
   archived?: boolean;
 };
 
-const ProjectEntry: React.FC<Project> = ({
+const FeaturedProject: React.FC<Project> = ({
   title,
   description,
   screenshot,
@@ -77,4 +77,4 @@ const ProjectEntry: React.FC<Project> = ({
   );
 };
 
-export default ProjectEntry;
+export default FeaturedProject;

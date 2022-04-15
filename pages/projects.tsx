@@ -1,4 +1,4 @@
-import ProjectEntry, { Project } from "components/ProjectEntry";
+import FeaturedProject, { Project } from "components/FeaturedProject";
 import ArchivedProject from "components/ArchivedProject";
 
 import type { NextPage } from "next";
@@ -18,7 +18,7 @@ const Projects: NextPage<Props> = ({ projects }: Props) => {
         <HeadingOne className="mb-16 text-center">Featured</HeadingOne>
 
         {featuredProjects.map((project) => (
-          <ProjectEntry
+          <FeaturedProject
             key={project.title}
             title={project.title}
             description={project.description}
