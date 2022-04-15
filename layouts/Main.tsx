@@ -16,19 +16,6 @@ const MainLayout: React.FC = ({ children }) => {
         "absolute top-0 left-0 flex min-h-[100.1%] w-full flex-col bg-th-bg transition-colors duration-500"
       )}
     >
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-
       {/* Global site tag (gtag.js) - Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-ZFG2C78VKF"
