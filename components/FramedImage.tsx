@@ -19,7 +19,7 @@ const FramedImage: React.FC<Props> = ({
       className={classNames("framed-image h-full w-full rounded-xl", className)}
     >
       <Image
-        className="rounded-xl"
+        className="rounded-xl bg-gray-500"
         src={getAssetUrl(fileName)}
         alt={alt}
         height={height}
