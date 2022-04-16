@@ -37,7 +37,14 @@ body {
   --text-secondary: theme("colors.gray.200");
 }
 
+/*-------------------------------------
+  HELPERS
+-------------------------------------*/
 .framed-image {
   @apply shadow-gray-500;
   box-shadow: 0.8rem 0.8rem var(--tw-shadow-color);
+}
+
+.paragraph a {
+  text-decoration: underline;
 }

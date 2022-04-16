@@ -12,7 +12,13 @@ const Paragraph: React.FC<Props> = ({
   textColorClass = "text-th-text-primary",
 }: Props) => {
   return (
-    <p className={classNames("text-xl md:text-2xl", textColorClass, className)}>
+    <p
+      className={classNames(
+        "paragraph text-xl md:text-2xl",
+        textColorClass,
+        className
+      )}
+    >
       {children}
     </p>
   );
