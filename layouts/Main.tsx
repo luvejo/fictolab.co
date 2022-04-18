@@ -1,5 +1,4 @@
 import Navigation from "components/Navigation";
-import Script from "next/script";
 import { useState } from "react";
 import classNames from "classnames";
 
@@ -15,22 +14,6 @@ const MainLayout: React.FC = ({ children }) => {
         "absolute top-0 left-0 flex min-h-[100.1%] w-full flex-col bg-th-bg transition-colors duration-500"
       )}
     >
-      {/* Global site tag (gtag.js) - Google Analytics */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-ZFG2C78VKF"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {process.env.NODE_ENV !== "development" &&
-          `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-ZFG2C78VKF');
-        `}
-      </Script>
-
       <Navigation onChangeTheme={toggleTheme} lightThemeOn={lightThemeOn} />
 
       {children}
