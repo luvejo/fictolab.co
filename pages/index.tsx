@@ -25,8 +25,8 @@ const Index: NextPage = () => {
               className="flex"
               fileName="avatar.jpg"
               alt=" Picture of me"
-              height={310}
-              width={310}
+              height={260}
+              width={260}
               layout="fixed"
             />
           </div>
@@ -53,8 +53,8 @@ const Index: NextPage = () => {
             </p>
 
             <Paragraph className="mt-9">
-              <strong>Fictolab</strong> is where I share the web prototypes that
-              I would love to see in the world.
+              <strong>Fictolab</strong> is the playground of my web app ideas
+              and wanders.
             </Paragraph>
 
             <div className="mt-6 flex justify-center gap-x-5 md:justify-start">
