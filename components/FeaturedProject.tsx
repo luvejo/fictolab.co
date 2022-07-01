@@ -48,7 +48,9 @@ const FeaturedProject: React.FC<Project> = ({
       {/* Description */}
       <div className="mx-auto mt-6 max-w-[496px] md:mt-0 md:w-2/5">
         <div className="flex items-center gap-4">
-          <HeadingTwo>{title}</HeadingTwo>
+          <a href={mainLink} target="_blank" rel="noreferrer">
+            <HeadingTwo>{title}</HeadingTwo>
+          </a>
 
           <ProjectLinks links={links} />
         </div>

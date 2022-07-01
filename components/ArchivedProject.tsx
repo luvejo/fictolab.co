@@ -20,11 +20,15 @@ const ArchivedEntry: React.FC<Project> = ({
   firstCommit,
   lastCommit,
 }: Project) => {
+  const mainLink = links?.demo || links?.figma || links?.github;
+
   return (
     <article className="mx-auto mb-0.5 max-w-screenshot bg-th-card py-8 px-12 first-of-type:rounded-t-xl last-of-type:rounded-b-xl md:flex md:max-w-none">
       <div className="md:w-1/2">
         <div className="flex items-center gap-4">
-          <HeadingTwo>{title}</HeadingTwo>
+          <a href={mainLink} target="_blank" rel="noreferrer">
+            <HeadingTwo>{title}</HeadingTwo>
+          </a>
           <ProjectLinks links={links} />
         </div>
         <Paragraph textColorClass="text-th-text-secondary">
