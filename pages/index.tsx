@@ -20,14 +20,13 @@ const Index: NextPage = () => {
       <div className="mx-auto my-14 flex flex-grow items-center">
         <div className="flex max-w-md flex-col items-center gap-x-12 px-5 md:max-w-[740px] md:flex-row ">
           {/* Desktop Avatar */}
-          <div className="hidden md:block">
+          <div className="hidden shrink-0 md:block">
             <FramedImage
               className="flex"
               fileName="avatar.jpg"
               alt=" Picture of me"
               height={260}
               width={260}
-              layout="fixed"
             />
           </div>
 
@@ -40,7 +39,6 @@ const Index: NextPage = () => {
               height={128}
               width={128}
               quality={100}
-              layout="fixed"
             />
           </div>
 
