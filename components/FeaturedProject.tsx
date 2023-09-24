@@ -47,12 +47,14 @@ const FeaturedProject: React.FC<Project> = ({
 
       {/* Description */}
       <div className="mx-auto mt-6 max-w-[496px] md:mt-0 md:w-2/5">
-        <div className="flex items-center gap-4">
+        <div className="flex items-start gap-4">
           <a href={mainLink} target="_blank" rel="noreferrer">
             <HeadingTwo>{title}</HeadingTwo>
           </a>
 
-          <ProjectLinks links={links} />
+          <div className="mt-1">
+            <ProjectLinks links={links} />
+          </div>
         </div>
         <p className="text-2xl text-th-text-secondary">
           {getSimplifiedDateRange(firstCommit, lastCommit)}
