@@ -57,7 +57,7 @@ const Index: NextPage = () => {
 
             <div className="mt-6 flex justify-center gap-x-5 md:justify-start">
               <a
-                href="https://github.com/luvejo"
+                href="https://github.com/luveqz"
                 target="_blank"
                 rel="noreferrer"
               >
