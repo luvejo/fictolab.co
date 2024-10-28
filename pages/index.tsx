@@ -23,10 +23,11 @@ const Index: NextPage = () => {
           <div className="hidden shrink-0 md:block">
             <FramedImage
               className="flex"
-              fileName="avatar.jpg"
+              fileName="avatar.wepb"
               alt=" Picture of me"
-              height={260}
-              width={260}
+              height={412}
+              width={412}
+              quality={100}
             />
           </div>
 
@@ -36,8 +37,8 @@ const Index: NextPage = () => {
               src={getAssetUrl("avatar.webp")}
               className="rounded-full"
               alt=" Picture of me"
-              height={128}
-              width={128}
+              height={412}
+              width={412}
               quality={100}
             />
           </div>
