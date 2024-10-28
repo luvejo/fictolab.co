@@ -23,22 +23,22 @@ const Index: NextPage = () => {
           <div className="hidden shrink-0 md:block">
             <FramedImage
               className="flex"
-              fileName="avatar.wepb"
+              fileName="avatar.webp"
               alt=" Picture of me"
-              height={412}
-              width={412}
+              height={260}
+              width={260}
               quality={100}
             />
           </div>
 
           {/* Mobile Avatar */}
-          <div className="overflow-hidden md:hidden">
+          <div className="overflow-hidden md:hidden mb-3">
             <Image
               src={getAssetUrl("avatar.webp")}
               className="rounded-full"
               alt=" Picture of me"
-              height={412}
-              width={412}
+              height={103}
+              width={103}
               quality={100}
             />
           </div>
