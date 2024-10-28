@@ -33,7 +33,7 @@ const Index: NextPage = () => {
           {/* Mobile Avatar */}
           <div className="overflow-hidden md:hidden">
             <Image
-              src={getAssetUrl("avatar.jpg")}
+              src={getAssetUrl("avatar.webp")}
               className="rounded-full"
               alt=" Picture of me"
               height={128}
