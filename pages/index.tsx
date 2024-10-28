@@ -51,7 +51,7 @@ const Index: NextPage = () => {
               Web Frontend
             </p>
 
-            <Paragraph className="mt-9">
+            <Paragraph className="mt-9 max-w-xs md:max-w-none">
               <strong>Fictolab</strong> is the playground of my web app ideas
               and wanders.
             </Paragraph>
@@ -69,6 +69,7 @@ const Index: NextPage = () => {
                 href="https://www.linkedin.com/in/luisfelipevelasquez"
                 target="_blank"
                 rel="noreferrer"
+                className="hidden"
               >
                 <IconLinkedIn className="fill-th-text-primary" />
               </a>
